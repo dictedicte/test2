@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+
+        *{
+            transition: all 0.2s;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            border-spacing: 0;
+        }
+
+        body{
+background-image: linear-gradient(to right top, #c389f0, #c188f3, #be88f5, #bb87f8, #b887fb, #b588fc, #b28afe, #af8bff, #ac8eff, #a990ff, #a693ff, #a395ff);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: helvetica;
+            cursor: default;
+            height: 100vh;
+        }
+
+        .entry{
+            background-image: linear-gradient(to right,#a26cff74,#421bd06a);
+            
+            backdrop-filter: blur(3px) brightness(2);
+            width: 400px;
+            height: 48px;
+            min-height: 48px;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 10px;
+            box-shadow: 2px 2px 4px rgba(156, 95, 213, 0.481);
+            border: solid 1px #ffffff3f;
+        }
+        .entry:hover,.entry:active{
+            height: fit-content;
+        }
+
+        button{
+            border: 0;
+            background-color: rgba(137, 43, 226, 0.804);
+            width: 38px;
+            height: 38px;
+            border-radius: 100%;
+            transition-property: all;
+            transition-duration: 0.3s;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            margin: 5px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+        button::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(open_in_new_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+            background-size: 65%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            transition-property: all;
+            transition-duration: 0.3s;
+        }
+        button:hover{
+            box-shadow: 0 0 10px 0 rgba(207, 155, 255, 0.879);
+        }
+        button:hover:after{
+            filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.468));
+        }
+        button:active{
+            box-shadow: 0 0 20px 0 rgba(227, 197, 255, 0.896);
+            background-color: rgba(156, 58, 248, 0.804);
+        }
+        button:active:after{
+            filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.656));
+        }
+
+        .entry .main{
+            height: 48px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-left: 8px;
+        }
+        
+            .desc{
+                color: blueviolet;
+                font-weight: 900;
+                font-size: 17px;
+                height: fit-content;
+                width: 100%;
+            }
+
+            .text{
+                height: fit-content;
+                font-size: 15px;
+                color: rgb(161, 112, 207);
+            }
+        
+        .entry .more{
+            border-top: solid 1px #ffffff3f;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .entry .more tr{
+            margin-bottom: 15px;
+            
+}
+
+.entry .more tr th{
+    color: blueviolet;
+    width: 40px;
+    vertical-align: top;
+    
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.entry .more tr td ul{
+    list-style: none;
+    font-size: 13px;
+    color: #9660e3;
+    margin-bottom: 10px;
+
+}
+
+        /*
+
+        button:hover{
+            outline: solid 4px rgba(255, 255, 255, 0.234);
+        }
+
+        button:active{
+            animation: click 0.3s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+
+        @keyframes click {
+            0%{
+            outline: solid 4px rgba(255, 255, 255, 0.234);
+            }
+
+            100%{
+                outline: solid 10px rgba(255, 255, 255, 0.125); 
+            }
+        }
+        */
+    </style>
+</head>
+<body>
+
+    <div class="entry">
+        <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg&" target="_blank"><button></button></a>
+        <div class="main">
+            <div class="desc">DESCRIPTION</div>
+            <div class="text">Text</div>
+        </div>
+        <table class="more">
+            <tr><th>MEDIA</th><td><ul>
+                <li>7 IMAGES</li>
+                <li>3 VIDEOS</li>
+            </ul></td></tr>
+            <tr><th>LINK URL</th><td><ul>
+                <li></li>
+            </ul></td></tr>
+        </table>
+    </div>
+
+    <div class="entry">
+        <button></button>
+        <div class="main">
+            <div class="desc">DESCRIPTION</div>
+        </div>
+        <table class="more">
+            <tr><th>CONTENTS</th><td><ul>
+                <li>1 VIDEOS</li>
+            </ul></td></tr>
+            <tr><th>DURATION</th><td><ul>
+                <li>00:06:13</li>
+            </ul></td></tr>
+        </table>
+    </div>
+</body>
+</html>
